@@ -16,14 +16,15 @@ string station_name(int x){
 	for (auto i = m.begin(); i != m.end(); i++){
 		if (i->second == x)return i->first;
 	}
-}
+	return ("");
+};
 void printpath(int i, int j){
 	if (i!=j)printpath(i, p[i][j]);
 	cout<< station_name(j)<<" ";
 }
 int main(){
 	mapping();
-	input.open("input(2).txt"); //Open input file
+	input.open("input.txt"); //Open input file
 	for (int i=0;i<200;i++){
 		for (int j=0;j<200;j++){
 			if (i == j)continue;
@@ -98,4 +99,3 @@ int main(){
 		cout << "-------------------" <<endl;
 	}
 }
-
