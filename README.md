@@ -4,7 +4,9 @@ All-Pair-Shortest-Path Algorithm on the Singapore MRT System
 <b>Mechanism</b>
 <ul>
   <li>Utilises Floyd Warshall's All-Pair Shortest Path on the Singapore MRT System</li>
-  <li>Interchange stations between 2 lines are split into separated into stations with the walk time between them being an edge</li>
+  <li>Stations are taken as nodes</li>
+  <li>Time taken for train to between adjacent stations are weighted edges</li>
+  <li>Interchange stations between 2 lines are split into separated into stations with the walk time between them being a weighted edge</li>
   <li>Time the train stops at each stop is considered in the algorithm</li>
   <li>Time for each edge and time at each stop is measured in person with a stopwatch</li>
   <li>Stations are labelled according to the Singapore MRT map (in repository)</li>
