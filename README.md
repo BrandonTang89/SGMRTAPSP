@@ -19,3 +19,6 @@ All-Pair-Shortest-Path Algorithm on the Singapore MRT System
   <li>Walking pace while measuring not fully consistent</li>
   <li>Time between specific train lines at stops are merely average values; true values depend on direction of walking; direction of train  being taken and etc</li>
 </ul>
+
+Command to compile (requires g++):<br>
+<pre>g++ "MRT APSP.cpp"</pre> 
